@@ -13,8 +13,6 @@ public class Main {
 
         int total = payment + bonus + balance;
 
-        int newBalance = balance + payment;
-
         System.out.println("Итоговая сумма = " + total);
 
         System.out.println("Из них начисленно бонусами = " + bonus);
