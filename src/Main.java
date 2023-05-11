@@ -3,24 +3,21 @@ public class Main {
 
         int balance = 100;
 
-        int payment = 1100;
+        int payment = 5000;
 
-        boolean event = true;
-
-        int bonus = event ? 1 : 0;
+        int bonus = payment/100;
 
         if (payment < 1000) {
             bonus = 0;
         }
 
-        int total = payment * bonus / 100;
+        int total = payment + bonus + balance;
 
+        int newBalance = balance + payment;
 
-        int new_balance = balance + payment;
+        System.out.println("Итоговая сумма = " + total);
 
-        System.out.println("Баланс = " + new_balance);
-
-        System.out.println("Количество бонусов = " + total);
+        System.out.println("Из них начисленно бонусами = " + bonus);
 
 
     }
